@@ -23,10 +23,22 @@ public:
             cin >> A[i];
         }
     }
+
+    void append(){
+        int x;
+        cout<<"enter the number you want to append: ";
+        cin>>x;
+        A[length] = x ; 
+        length++;
+        for(int i=0 ; i<length ; i++){
+            cout<<A[i]<<" ";
+        }
+        
+    }
  
     void display(){
         for (int i = 0; i < length; i++){
-            cout << A[i] << " ";
+            cout << A[i] << " "<<endl;
         }
     }
  
@@ -42,6 +54,7 @@ int main() {
     Array arr(10);
     arr.create();
     arr.display();
+    arr.append();
  
  
     return 0;
