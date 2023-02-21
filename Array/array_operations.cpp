@@ -41,6 +41,20 @@ public:
             cout << A[i] << " "<<endl;
         }
     }
+
+    void insert(int index , int x){
+        int i;
+        if (index>=0 && index <= length){
+            for(i=length;i<index ;i--){
+                A[i]=A[i-1];
+                A[index]=x;
+                length++;
+            }
+            cout<<A[i]<<" "<<endl;
+
+
+        }
+    }
  
     ~Array(){
         delete[] A;
@@ -55,6 +69,7 @@ int main() {
     arr.create();
     arr.display();
     arr.append();
+    arr.insert(4, 9);
  
  
     return 0;
