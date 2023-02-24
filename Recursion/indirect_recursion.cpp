@@ -24,3 +24,6 @@ int main(){
     return 0;
 
 }
+
+
+//when one function is calling another function a -> b -> c
